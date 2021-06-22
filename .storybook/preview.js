@@ -3,7 +3,7 @@ import { setCompodocJson } from "@storybook/addon-docs/angular";
 import docJson from "../documentation.json";
 setCompodocJson(docJson);
 
-import fetch from 'node-fetch';
+/* import fetch from 'node-fetch';
 
 async function fetchTopTodo() {
   try {
@@ -21,7 +21,16 @@ export const loaders = [
   async () => ({
     currentUser: await fetchTopTodo(),
   }),
-];
+]; */
+
+import fetch from 'node-fetch';
+export const loaders =[
+  async () => ({
+    currentUser: await (
+      await fetch("https://jsonplaceholder.typicode.com/todos/1")
+    ).json(),
+  }),
+]
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

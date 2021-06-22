@@ -504,16 +504,7 @@
                 "defaultValue": "(args: Page) => ({\n  component: Page,\n  props: args,\n})"
             }
         ],
-        "functions": [
-            {
-                "name": "fetchTodo",
-                "file": "src/stories/SampleLoaderComponent.stories.ts",
-                "ctype": "miscellaneous",
-                "subtype": "function",
-                "description": "",
-                "args": []
-            }
-        ],
+        "functions": [],
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
@@ -660,18 +651,7 @@
                 }
             ]
         },
-        "groupedFunctions": {
-            "src/stories/SampleLoaderComponent.stories.ts": [
-                {
-                    "name": "fetchTodo",
-                    "file": "src/stories/SampleLoaderComponent.stories.ts",
-                    "ctype": "miscellaneous",
-                    "subtype": "function",
-                    "description": "",
-                    "args": []
-                }
-            ]
-        },
+        "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {}
     },
@@ -825,15 +805,6 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/SampleLoaderComponent.stories.ts",
-                "type": "function",
-                "linksubtype": "function",
-                "name": "fetchTodo",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
