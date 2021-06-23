@@ -10,45 +10,28 @@ import fetch from "node-fetch";
 
 <Story
   name="Example Loader from a story"
-  args={{ 
-    todo: {
-      userId:2,
-      id:2,
-      title:'something',
-      completed:false,
-   },
-   }}
   loaders={[
     async () => ({
       todo: await (
         await fetch("https://jsonplaceholder.typicode.com/todos/1")
-      ).json()
-    })
-  ]}>
+      ).json(),
+    }),
+  ]}
+>
   {(args, { loaded: { todo } }) => ({
     props: {
-      todo: todo
+      todo: todo,
     },
     template: '<app-sample-loader [todo]="todo"></app-sample-loader>',
   })}
 </Story>
 
-
 # Example Preview loader
 
-<Story
-  name="Example Loader from preview"
-  args={{ 
-    todo: {
-      userId:2,
-      id:2,
-      title:'something',
-      completed:false,
-   },
-   }}>
+<Story name="Example Loader from preview">
   {(args, { loaded: { currentUser } }) => ({
     props: {
-      todo:currentUser,
+      todo: currentUser,
     },
     template: '<app-sample-loader [todo]="todo"></app-sample-loader>',
   })}
