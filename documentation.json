@@ -381,7 +381,7 @@
                 "subtype": "variable",
                 "file": "src/stories/SampleLoaderComponent.stories.ts",
                 "type": "",
-                "defaultValue": "(args, { loaded: { currentUser } }) => {\n  console.log(`currentUser:${JSON.stringify(currentUser, null, 2)}`);\n  return {\n    props: {\n      args,\n      todo:currentUser,\n    },\n    template: '<app-sample-loader [todo]=\"todo\"></app-sample-loader>',\n  };\n}"
+                "defaultValue": "(args, { loaded: { currentUser } }) => {\n  console.log(`currentUser:${JSON.stringify(currentUser, null, 2)}`);\n  return {\n    props: {\n      args,\n      todo: currentUser,\n    },\n    // template: '<app-sample-loader [todo]=\"todo\"></app-sample-loader>',\n  };\n}"
             },
             {
                 "name": "environment",
@@ -461,7 +461,7 @@
                 "subtype": "variable",
                 "file": "src/stories/SampleLoaderComponent.stories.ts",
                 "type": "",
-                "defaultValue": "(args, { loaded: { todo } }) => {\n  console.log(`todo:${JSON.stringify(todo, null, 2)}`);\n  return {\n    props: {\n      args,\n      todo,\n    },\n    template: '<app-sample-loader [todo]=\"todo\"></app-sample-loader>',\n  };\n}"
+                "defaultValue": "(args, { loaded: { todo } }) => {\n  console.log(`todo:${JSON.stringify(todo, null, 2)}`);\n  return {\n    props: {\n      args,\n      todo,\n    },\n    //template: '<app-sample-loader [todo]=\"todo\"></app-sample-loader>',\n  };\n}"
             },
             {
                 "name": "Secondary",
@@ -515,7 +515,7 @@
                     "subtype": "variable",
                     "file": "src/stories/SampleLoaderComponent.stories.ts",
                     "type": "",
-                    "defaultValue": "(args, { loaded: { currentUser } }) => {\n  console.log(`currentUser:${JSON.stringify(currentUser, null, 2)}`);\n  return {\n    props: {\n      args,\n      todo:currentUser,\n    },\n    template: '<app-sample-loader [todo]=\"todo\"></app-sample-loader>',\n  };\n}"
+                    "defaultValue": "(args, { loaded: { currentUser } }) => {\n  console.log(`currentUser:${JSON.stringify(currentUser, null, 2)}`);\n  return {\n    props: {\n      args,\n      todo: currentUser,\n    },\n    // template: '<app-sample-loader [todo]=\"todo\"></app-sample-loader>',\n  };\n}"
                 },
                 {
                     "name": "SampleStory",
@@ -523,7 +523,7 @@
                     "subtype": "variable",
                     "file": "src/stories/SampleLoaderComponent.stories.ts",
                     "type": "",
-                    "defaultValue": "(args, { loaded: { todo } }) => {\n  console.log(`todo:${JSON.stringify(todo, null, 2)}`);\n  return {\n    props: {\n      args,\n      todo,\n    },\n    template: '<app-sample-loader [todo]=\"todo\"></app-sample-loader>',\n  };\n}"
+                    "defaultValue": "(args, { loaded: { todo } }) => {\n  console.log(`todo:${JSON.stringify(todo, null, 2)}`);\n  return {\n    props: {\n      args,\n      todo,\n    },\n    //template: '<app-sample-loader [todo]=\"todo\"></app-sample-loader>',\n  };\n}"
                 }
             ],
             "src/environments/environment.prod.ts": [

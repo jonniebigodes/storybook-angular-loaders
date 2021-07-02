@@ -1,7 +1,7 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
-import fetch from "node-fetch";
+import fetch from 'node-fetch';
 import { CommonModule } from '@angular/common';
-import SampleLoaderComponent  from './SampleLoaderComponent';
+import SampleLoaderComponent from './SampleLoaderComponent';
 
 export default {
   component: SampleLoaderComponent,
@@ -70,22 +70,21 @@ async function fetchTodo() {
   }
 } */
 
-
-export const SampleStory= (args, { loaded: { todo } }) => {
+export const SampleStory = (args, { loaded: { todo } }) => {
   console.log(`todo:${JSON.stringify(todo, null, 2)}`);
   return {
     props: {
       args,
       todo,
     },
-    template: '<app-sample-loader [todo]="todo"></app-sample-loader>',
+    //template: '<app-sample-loader [todo]="todo"></app-sample-loader>',
   };
 };
 
 SampleStory.loaders = [
   async () => ({
     todo: await (
-      await fetch("https://jsonplaceholder.typicode.com/todos/1")
+      await fetch('https://jsonplaceholder.typicode.com/todos/1')
     ).json(),
   }),
 ];
@@ -96,9 +95,9 @@ export const AnotherStory = (args, { loaded: { currentUser } }) => {
   return {
     props: {
       args,
-      todo:currentUser,
+      todo: currentUser,
     },
-    template: '<app-sample-loader [todo]="todo"></app-sample-loader>',
+    // template: '<app-sample-loader [todo]="todo"></app-sample-loader>',
   };
-};  
+};
 //
